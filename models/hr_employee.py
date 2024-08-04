@@ -5,4 +5,11 @@ class Empleado(models.Model):
     _inherit = 'hr.employee'
     #_description = 'Empleado'
 
-    years_of_service = fields.Integer(string='Años de antigüedad')
+    years_of_service = fields.Integer(string='Años de antigüedad', compute='_compute_years_of_service')
+
+    def _compute_years_of_service(self):
+        for record in self:
+            if record.first_contract_date:
+                record.years_of_service = (fields.Date.today() - record.first_contract_date).days // 365
+            else:
+                record.years_of_service = 0
