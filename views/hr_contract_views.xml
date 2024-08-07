@@ -11,6 +11,10 @@
                         <field name="wage_per_hour" nolabel="1"/>
                         <span>/ hour</span>
                     </div>
+                    <label for="prime_de_poste"/>
+                    <div class="o_row">
+                        <field name="prime_de_poste" nolabel="1"/>
+                    </div>
                 </xpath>
             </field>
         </record>

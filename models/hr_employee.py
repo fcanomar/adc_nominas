@@ -13,3 +13,4 @@ class Empleado(models.Model):
                 record.years_of_service = (fields.Date.today() - record.first_contract_date).days // 365
             else:
                 record.years_of_service = 0
+

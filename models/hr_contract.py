@@ -10,3 +10,5 @@ class Contract(models.Model):
     def _compute_wage_per_hour(self):
         for contract in self:
             contract.wage_per_hour = round(contract.wage/contract.resource_calendar_id.hours_total/4.33,3)
+
+    prime_de_poste = fields.Integer(string='Prima de puesto')
