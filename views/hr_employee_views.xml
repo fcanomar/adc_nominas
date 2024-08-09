@@ -5,9 +5,19 @@
         <field name="model">hr.employee</field>
         <field name="inherit_id" ref="hr.view_employee_form"/>
         <field name="arch" type="xml">
+            <xpath expr="//group[field[@name='mobile_phone']]" position="before">
+                <group>
+                    <field name="n_employe"/>
+                </group>
+                <group>
+                    <field name="cin"/>
+                    <field name="n_cnaps"/>
+                </group>
+            </xpath>
             <xpath expr="//field[@name='user_id']" position="before">
                 <field name="years_of_service"/>
             </xpath>
         </field>
     </record>
 </odoo>
+

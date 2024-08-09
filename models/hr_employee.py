@@ -14,3 +14,6 @@ class Empleado(models.Model):
             else:
                 record.years_of_service = 0
 
+    n_employe = fields.Char(string='Número empleado')
+    cin = fields.Char(string='C.I.N.')
+    n_cnaps = fields.Char(string='Número CNAPS')
