@@ -15,6 +15,14 @@
                     <div class="o_row">
                         <field name="prime_de_poste" nolabel="1"/>
                     </div>
+                    <label for="prime_velo"/>
+                    <div class="o_row">
+                        <field name="prime_velo" nolabel="1"/>
+                    </div>
+                    <label for="transport_omit"/>
+                    <div class="o_row">
+                        <field name="transport_omit" nolabel="1"/>
+                    </div>
                 </xpath>
             </field>
         </record>
