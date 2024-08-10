@@ -11,5 +11,8 @@
         'views/resource_calendar_views.xml',
         'views/hr_contract_views.xml',
         'data/hr.salary.rule.category.csv',
+        'data/hr.payroll.structure.csv',
+        'data/hr.salary.rule.csv',
+        'data/hr.rule.input.csv',
     ],
 }
