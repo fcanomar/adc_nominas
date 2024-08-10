@@ -10,5 +10,6 @@
         'views/hr_employee_views.xml',
         'views/resource_calendar_views.xml',
         'views/hr_contract_views.xml',
+        'data/hr.salary.rule.category.csv',
     ],
 }
