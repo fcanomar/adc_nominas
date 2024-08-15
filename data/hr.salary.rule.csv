@@ -1,4 +1,4 @@
-"id","name","code","category_id:id","sequence","amount_select","amount_python_compute","quantity","amount_fix"
+"id","name","code","category_id:id","sequence","amount_select","amount_python_compute","condition_select","condition_python","quantity","amount_fix"
 salary_rule_anciennete,Prime d'ancienneté,ANC,salary_rule_category_suplemento_horario,2,code,"# Años de antigüedad
 years_of_service = employee.years_of_service
 
@@ -44,7 +44,7 @@ prime_de_poste = contract.prime_de_poste
 
 # Redondear el valor a 0 decimales
 result = prime_de_poste"
-salary_rule_prime_velo,Prime vélo,VEL,salary_rule_category_bonificaciones,7,code,"# Obtener el contrato del empleado actual
+salary_rule_prime_velo,Prime vélo,VEL,salary_rule_category_bonificaciones,7,fix,"# Obtener el contrato del empleado actual
 contract = payslip.contract_id
 
 # Obtener el valor del campo wage_per_hour del contrato
@@ -52,4 +52,11 @@ prime_velo = contract.prime_velo
 
 # Redondear el valor a 0 decimales
 result = prime_velo"
-salary_rule_transport_omit,Indemnité de transport OMIT,OMI,salary_rule_category_transporte,8,fix,"",1.0,3000.00
+salary_rule_transport_omit,Indemnité de transport OMIT,OMI,salary_rule_category_transporte,8,fix,"",python,"# Obtener el contrato del empleado actual
+contract = payslip.contract_id
+
+# Obtener el valor
+transport_omit = contract.transport_omit
+
+# Devolver resultado
+result = transport_omit",1.0,3000
