@@ -72,4 +72,4 @@ contract = payslip.contract_id
 wage = contract.wage
 
 # Redondear el valor a 0 decimales
-result = round(wage * inputs.FER.amount, 0)"
+result = round(wage/30 * inputs.FER.amount, 0)"
