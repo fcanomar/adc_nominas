@@ -2,3 +2,9 @@
 salary_input_dimanche,Nb d'heure du Dimanche (40 %),DIM,salary_rule_dimanche
 salary_input_heures_supplementaires,Nb d'Heures supplémentaires (30 %),SUP,salary_rule_heures_supplementaires
 salary_input_heures_nuit,Nb d'heures de nuit (30 %),NUI,salary_rule_heures_nuit
+salary_input_rappel,Rappel,RAP,salary_rule_rappel
+salary_input_primes_diverses,Primes Diverses,DIV,salary_rule_primes_diverses
+salary_input_mise_a_pied,Mise à pied,PIE,salary_rule_mise_a_pied
+
+
+
