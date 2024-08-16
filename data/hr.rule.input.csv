@@ -5,6 +5,7 @@ salary_input_heures_nuit,Nb d'heures de nuit (30 %),NUI,salary_rule_heures_nuit
 salary_input_rappel,Rappel,RAP,salary_rule_rappel
 salary_input_primes_diverses,Primes Diverses,DIV,salary_rule_primes_diverses
 salary_input_mise_a_pied,Mise à pied,PIE,salary_rule_mise_a_pied
+salary_input_jours_feries,Nombre de jours feriés,FER,salary_rule_jours_feries
 
 
 
