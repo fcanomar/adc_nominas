@@ -1,5 +1,5 @@
 "id","name","code","category_id:id","sequence","amount_select","amount_python_compute","condition_select","condition_python","quantity","amount_fix"
-salary_rule_salario_base,Salario base,"","",1,code,"# Salario base desde el contrato
+salary_rule_salario_base,Salario base,BAS,"",1,code,"# Salario base desde el contrato
 result = contract.wage"
 salary_rule_prime_poste,Prime de poste,POS,salary_rule_category_bonificaciones,2,code,"# Obtener el contrato del empleado actual
 contract = payslip.contract_id
