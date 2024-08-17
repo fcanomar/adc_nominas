@@ -19,5 +19,6 @@
         'data/resource.calendar.csv',
         'data/resource.calendar.attendance.csv',
         'data/hr.employee.csv',
+        'data/hr.contract.csv',
     ],
 }
