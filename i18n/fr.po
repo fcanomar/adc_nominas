@@ -1,0 +1,171 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* adc_nominas
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0-20231106\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-17 08:57+0000\n"
+"PO-Revision-Date: 2024-08-17 11:08+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 3.4.4\n"
+
+#. module: adc_nominas
+#: model_terms:ir.ui.view,arch_db:adc_nominas.view_hr_contract_form_inherit
+msgid "<span>/ hour</span>"
+msgstr "<span>/ heure</span>"
+
+#. module: adc_nominas
+#: model:ir.model.fields,field_description:adc_nominas.field_hr_employee__years_of_service
+msgid "Años de antigüedad"
+msgstr "Années d’ancienneté"
+
+#. module: adc_nominas
+#: model:hr.salary.rule.category,name:adc_nominas.salary_rule_category_bonificaciones
+msgid "Bonificaciones"
+msgstr "Primes"
+
+#. module: adc_nominas
+#: model:ir.model.fields,field_description:adc_nominas.field_hr_employee__cin
+msgid "C.I.N."
+msgstr "C.I.N."
+
+#. module: adc_nominas
+#: model:ir.model.fields,field_description:adc_nominas.field_hr_contract__display_name
+#: model:ir.model.fields,field_description:adc_nominas.field_hr_employee__display_name
+#: model:ir.model.fields,field_description:adc_nominas.field_resource_calendar__display_name
+msgid "Display Name"
+msgstr "Nom affiché"
+
+#. module: adc_nominas
+#: model:hr.salary.rule,name:adc_nominas.salary_rule_dimanche
+msgid "Domingos trabajados"
+msgstr "Dimanche travaillés"
+
+#. module: adc_nominas
+#: model:ir.model,name:adc_nominas.model_hr_employee
+msgid "Employee"
+msgstr "Employé"
+
+#. module: adc_nominas
+#: model:ir.model,name:adc_nominas.model_hr_contract
+msgid "Employee Contract"
+msgstr "Contrat de l'employé"
+
+#. module: adc_nominas
+#: model:hr.salary.rule,name:adc_nominas.salary_rule_heures_nuit
+msgid "Horas de noche"
+msgstr "Heures de nuit"
+
+#. module: adc_nominas
+#: model:hr.salary.rule,name:adc_nominas.salary_rule_heures_supplementaires
+msgid "Horas extra"
+msgstr "Heures supplémentaires"
+
+#. module: adc_nominas
+#: model:ir.model.fields,field_description:adc_nominas.field_hr_contract__id
+#: model:ir.model.fields,field_description:adc_nominas.field_hr_employee__id
+#: model:ir.model.fields,field_description:adc_nominas.field_resource_calendar__id
+msgid "ID"
+msgstr "ID"
+
+#. module: adc_nominas
+#: model:ir.model.fields,field_description:adc_nominas.field_hr_contract__transport_omit
+msgid "Indemnización de transporte OMIT"
+msgstr "Indemnité de transport OMIT"
+
+#. module: adc_nominas
+#: model:hr.salary.rule,name:adc_nominas.salary_rule_jours_feries
+msgid "Jours feriés"
+msgstr ""
+
+#. module: adc_nominas
+#: model:ir.model.fields,field_description:adc_nominas.field_hr_contract____last_update
+#: model:ir.model.fields,field_description:adc_nominas.field_hr_employee____last_update
+#: model:ir.model.fields,field_description:adc_nominas.field_resource_calendar____last_update
+msgid "Last Modified on"
+msgstr "Dernière Modification le"
+
+#. module: adc_nominas
+#: model:hr.salary.rule,name:adc_nominas.salary_rule_mise_a_pied
+msgid "Mise à pied"
+msgstr ""
+
+#. module: adc_nominas
+#: model:ir.model.fields,field_description:adc_nominas.field_hr_employee__n_cnaps
+msgid "Número CNAPS"
+msgstr "Numéro CNAPS"
+
+#. module: adc_nominas
+#: model:ir.model.fields,field_description:adc_nominas.field_hr_employee__n_employe
+msgid "Número de empleado"
+msgstr "Numéro employé"
+
+#. module: adc_nominas
+#: model:hr.salary.rule,name:adc_nominas.salary_rule_prime_velo
+#: model:ir.model.fields,field_description:adc_nominas.field_hr_contract__prime_velo
+msgid "Prima bicicleta"
+msgstr "Prime vélo"
+
+#. module: adc_nominas
+#: model:hr.salary.rule,name:adc_nominas.salary_rule_anciennete
+msgid "Prima de antigüedad"
+msgstr "Prime d’ancienneté"
+
+#. module: adc_nominas
+#: model:hr.salary.rule,name:adc_nominas.salary_rule_prime_poste
+#: model:ir.model.fields,field_description:adc_nominas.field_hr_contract__prime_de_poste
+msgid "Prima de puesto"
+msgstr "Prime de poste"
+
+#. module: adc_nominas
+#: model:hr.salary.rule,name:adc_nominas.salary_rule_primes_diverses
+msgid "Primas diversas"
+msgstr "Primes diverses"
+
+#. module: adc_nominas
+#: model:hr.salary.rule,name:adc_nominas.salary_rule_rappel
+msgid "Rappel"
+msgstr ""
+
+#. module: adc_nominas
+#: model:ir.model,name:adc_nominas.model_resource_calendar
+msgid "Resource Working Time"
+msgstr "Temps de travail de la ressource"
+
+#. module: adc_nominas
+#: model:hr.salary.rule,name:adc_nominas.salary_rule_salario_base
+msgid "Salario base"
+msgstr "Salaire de base"
+
+#. module: adc_nominas
+#: model:ir.model.fields,field_description:adc_nominas.field_hr_contract__wage_per_hour
+msgid "Salario por hora"
+msgstr "Salaire horaire"
+
+#. module: adc_nominas
+#: model:hr.salary.rule,name:adc_nominas.salary_rule_transport_omit
+msgid "Subsidio de transporte OMIT"
+msgstr "Indemnité de transport OMIT"
+
+#. module: adc_nominas
+#: model:hr.salary.rule.category,name:adc_nominas.salary_rule_category_suplemento_horario
+msgid "Suplemento horario"
+msgstr "Supplément horaire"
+
+#. module: adc_nominas
+#: model:ir.model.fields,field_description:adc_nominas.field_resource_calendar__hours_total
+msgid "Total horas por semana"
+msgstr "Total d’heures par semaine"
+
+#. module: adc_nominas
+#: model:hr.salary.rule.category,name:adc_nominas.salary_rule_category_transporte
+msgid "Transporte"
+msgstr "Transport"

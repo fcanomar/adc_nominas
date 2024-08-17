@@ -1,7 +1,7 @@
 "id","name","code","category_id:id","sequence","amount_select","amount_python_compute","condition_select","condition_python","quantity","amount_fix"
 salary_rule_salario_base,Salario base,BAS,"",1,code,"# Salario base desde el contrato
 result = contract.wage"
-salary_rule_prime_poste,Prime de poste,POS,salary_rule_category_bonificaciones,2,code,"# Obtener el contrato del empleado actual
+salary_rule_prime_poste,Prima de puesto,POS,salary_rule_category_bonificaciones,2,code,"# Obtener el contrato del empleado actual
 contract = payslip.contract_id
 
 # Obtener el valor del campo wage_per_hour del contrato
@@ -9,7 +9,7 @@ prime_de_poste = contract.prime_de_poste
 
 # Redondear el valor a 0 decimales
 result = prime_de_poste"
-salary_rule_anciennete,Prime d'ancienneté,ANC,salary_rule_category_bonificaciones,3,code,"# Años de antigüedad
+salary_rule_anciennete,Prima de antigüedad,ANC,salary_rule_category_bonificaciones,3,code,"# Años de antigüedad
 years_of_service = employee.years_of_service
 
 # Definir los montos según los años de antigüedad
@@ -20,7 +20,7 @@ else:
 
 # Devolver el monto calculado
 result = montant"
-salary_rule_heures_supplementaires,Heures supplémentaires,SUP,salary_rule_category_suplemento_horario,4,code,"# Obtener el contrato del empleado actual
+salary_rule_heures_supplementaires,Horas extra,SUP,salary_rule_category_suplemento_horario,4,code,"# Obtener el contrato del empleado actual
 contract = payslip.contract_id
 
 # Obtener el valor del campo wage_per_hour del contrato
@@ -29,7 +29,7 @@ wage_per_hour = contract.wage_per_hour
 # Redondear el valor a 0 decimales
 result = round(wage_per_hour * inputs.SUP.amount * 1.3, 0)"
 
-salary_rule_dimanche,Dimanche travaillés,DIM,salary_rule_category_suplemento_horario,5,code,"# Obtener el contrato del empleado actual
+salary_rule_dimanche,Domingos trabajados,DIM,salary_rule_category_suplemento_horario,5,code,"# Obtener el contrato del empleado actual
 contract = payslip.contract_id
 
 # Obtener el valor del campo wage_per_hour del contrato
@@ -37,7 +37,7 @@ wage_per_hour = contract.wage_per_hour
 
 # Redondear el valor a 0 decimales
 result = round(wage_per_hour * inputs.DIM.amount * 0.4, 0)"
-salary_rule_heures_nuit,Heures de nuit,NUI,salary_rule_category_suplemento_horario,6,code,"# Obtener el contrato del empleado actual
+salary_rule_heures_nuit,Horas de noche,NUI,salary_rule_category_suplemento_horario,6,code,"# Obtener el contrato del empleado actual
 contract = payslip.contract_id
 
 # Obtener el valor del campo wage_per_hour del contrato
@@ -46,7 +46,7 @@ wage_per_hour = contract.wage_per_hour
 # Redondear el valor a 0 decimales
 result = round(wage_per_hour * inputs.NUI.amount * 0.3, 0)"
 
-salary_rule_prime_velo,Prime vélo,VEL,salary_rule_category_bonificaciones,7,fix,"# Obtener el contrato del empleado actual
+salary_rule_prime_velo,Prima bicicleta,VEL,salary_rule_category_bonificaciones,7,fix,"# Obtener el contrato del empleado actual
 contract = payslip.contract_id
 
 # Obtener el valor del campo wage_per_hour del contrato
@@ -54,7 +54,7 @@ prime_velo = contract.prime_velo
 
 # Redondear el valor a 0 decimales
 result = prime_velo"
-salary_rule_transport_omit,Indemnité de transport OMIT,OMI,salary_rule_category_transporte,8,fix,"",python,"# Obtener el contrato del empleado actual
+salary_rule_transport_omit,Subsidio de transporte OMIT,OMI,salary_rule_category_transporte,8,fix,"",python,"# Obtener el contrato del empleado actual
 contract = payslip.contract_id
 
 # Obtener el valor
@@ -63,7 +63,7 @@ transport_omit = contract.transport_omit
 # Devolver resultado
 result = transport_omit",1.0,3000
 salary_rule_rappel,Rappel,RAP,"",10,code,"result = inputs.RAP.amount"
-salary_rule_primes_diverses,Primes diverses,DIV,salary_rule_category_bonificaciones,11,code,"result = inputs.DIV.amount"
+salary_rule_primes_diverses,Primas diversas,DIV,salary_rule_category_bonificaciones,11,code,"result = inputs.DIV.amount"
 salary_rule_mise_a_pied,Mise à pied,PIE,"",12,code,"result = - inputs.PIE.amount"
 salary_rule_jours_feries,Jours feriés,FER,salary_rule_category_suplemento_horario,13,code,"# Obtener el contrato del empleado actual
 contract = payslip.contract_id
