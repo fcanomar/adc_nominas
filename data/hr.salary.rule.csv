@@ -27,7 +27,7 @@ contract = payslip.contract_id
 wage_per_hour = contract.wage_per_hour
 
 # Redondear el valor a 0 decimales
-result = round(wage_per_hour * inputs.SUP.amount * 1.3, 0)"
+result = round(wage_per_hour * inputs.SUP.amount_qty * 1.3, 0)"
 
 salary_rule_dimanche,Domingos trabajados,DIM,salary_rule_category_suplemento_horario,5,code,"# Obtener el contrato del empleado actual
 contract = payslip.contract_id
@@ -36,7 +36,7 @@ contract = payslip.contract_id
 wage_per_hour = contract.wage_per_hour
 
 # Redondear el valor a 0 decimales
-result = round(wage_per_hour * inputs.DIM.amount * 0.4, 0)"
+result = round(wage_per_hour * inputs.DIM.amount_qty * 0.4, 0)"
 salary_rule_heures_nuit,Horas de noche,NUI,salary_rule_category_suplemento_horario,6,code,"# Obtener el contrato del empleado actual
 contract = payslip.contract_id
 
@@ -44,7 +44,7 @@ contract = payslip.contract_id
 wage_per_hour = contract.wage_per_hour
 
 # Redondear el valor a 0 decimales
-result = round(wage_per_hour * inputs.NUI.amount * 0.3, 0)"
+result = round(wage_per_hour * inputs.NUI.amount_qty * 0.3, 0)"
 
 salary_rule_prime_velo,Prima bicicleta,VEL,salary_rule_category_bonificaciones,7,fix,"# Obtener el contrato del empleado actual
 contract = payslip.contract_id
@@ -72,4 +72,12 @@ contract = payslip.contract_id
 wage = contract.wage
 
 # Redondear el valor a 0 decimales
-result = round(wage/30 * inputs.FER.amount, 0)"
+result = round(wage/30 * inputs.FER.amount_qty, 0)"
+salary_rule_conge_maternite,Permiso de maternindad,MAT,"",14,code,"# Obtener el contrato del empleado actual
+contract = payslip.contract_id
+
+# Obtener el valor del campo wage del contrato
+wage = contract.wage
+
+# Redondear el valor a 0 decimales
+result = - round(inputs.MAT.amount_qty * wage / 2, 0)"
