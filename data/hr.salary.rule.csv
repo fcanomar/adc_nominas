@@ -45,8 +45,15 @@ wage_per_hour = contract.wage_per_hour
 
 # Redondear el valor a 0 decimales
 result = round(wage_per_hour * inputs.NUI.amount_qty * 0.3, 0)"
+salary_rule_jours_feries,Días festivos,FER,salary_rule_category_suplemento_horario,7,code,"# Obtener el contrato del empleado actual
+contract = payslip.contract_id
 
-salary_rule_prime_velo,Prima bicicleta,VEL,salary_rule_category_bonificaciones,7,fix,"# Obtener el contrato del empleado actual
+# Obtener el valor del campo wage del contrato
+wage = contract.wage
+
+# Redondear el valor a 0 decimales
+result = round(wage/30 * inputs.FER.amount_qty, 0)"
+salary_rule_prime_velo,Prima bicicleta,VEL,salary_rule_category_bonificaciones,8,fix,"# Obtener el contrato del empleado actual
 contract = payslip.contract_id
 
 # Obtener el valor del campo wage_per_hour del contrato
@@ -54,7 +61,7 @@ prime_velo = contract.prime_velo
 
 # Redondear el valor a 0 decimales
 result = prime_velo"
-salary_rule_transport_omit,Subsidio de transporte OMIT,OMI,salary_rule_category_transporte,8,fix,"",python,"# Obtener el contrato del empleado actual
+salary_rule_transport_omit,Subsidio de transporte OMIT,OMI,salary_rule_category_transporte,9,fix,"",python,"# Obtener el contrato del empleado actual
 contract = payslip.contract_id
 
 # Obtener el valor
@@ -65,14 +72,6 @@ result = transport_omit",1.0,3000
 salary_rule_rappel,Ajuste salarial,RAP,"",10,code,"result = inputs.RAP.amount"
 salary_rule_primes_diverses,Primas diversas,DIV,salary_rule_category_bonificaciones,11,code,"result = inputs.DIV.amount"
 salary_rule_mise_a_pied,Suspensión,PIE,"",12,code,"result = - inputs.PIE.amount"
-salary_rule_jours_feries,Días festivos,FER,salary_rule_category_suplemento_horario,13,code,"# Obtener el contrato del empleado actual
-contract = payslip.contract_id
-
-# Obtener el valor del campo wage del contrato
-wage = contract.wage
-
-# Redondear el valor a 0 decimales
-result = round(wage/30 * inputs.FER.amount_qty, 0)"
 salary_rule_conge_maternite,Permiso de maternindad,MAT,"",14,code,"# Obtener el contrato del empleado actual
 contract = payslip.contract_id
 
