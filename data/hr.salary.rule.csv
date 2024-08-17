@@ -62,10 +62,10 @@ transport_omit = contract.transport_omit
 
 # Devolver resultado
 result = transport_omit",1.0,3000
-salary_rule_rappel,Rappel,RAP,"",10,code,"result = inputs.RAP.amount"
+salary_rule_rappel,Ajuste salarial,RAP,"",10,code,"result = inputs.RAP.amount"
 salary_rule_primes_diverses,Primas diversas,DIV,salary_rule_category_bonificaciones,11,code,"result = inputs.DIV.amount"
-salary_rule_mise_a_pied,Mise à pied,PIE,"",12,code,"result = - inputs.PIE.amount"
-salary_rule_jours_feries,Jours feriés,FER,salary_rule_category_suplemento_horario,13,code,"# Obtener el contrato del empleado actual
+salary_rule_mise_a_pied,Suspensión,PIE,"",12,code,"result = - inputs.PIE.amount"
+salary_rule_jours_feries,Días festivos,FER,salary_rule_category_suplemento_horario,13,code,"# Obtener el contrato del empleado actual
 contract = payslip.contract_id
 
 # Obtener el valor del campo wage del contrato

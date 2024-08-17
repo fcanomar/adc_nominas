@@ -13,4 +13,4 @@ class Contract(models.Model):
 
     prime_de_poste = fields.Integer(string='Prima de puesto')
     prime_velo = fields.Integer(string='Prima bicicleta')
-    transport_omit = fields.Boolean(string='Indemnización de transporte OMIT')
+    transport_omit = fields.Boolean(string='Subsidio de transporte OMIT')
