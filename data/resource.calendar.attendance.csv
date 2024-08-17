@@ -1,0 +1,11 @@
+"id","calendar_id:id","name","dayofweek","day_period","hour_from","hour_to"
+calendar_attendance_40h_lunes_maniana,resource_calendar_40h,Lunes Mañana,0,morning,8,12
+calendar_attendance_40h_lunes_tarde,resource_calendar_40h,Lunes Tarde,0,afternoon,13,17
+calendar_attendance_40h_martes_maniana,resource_calendar_40h,Lunes Mañana,1,morning,8,12
+calendar_attendance_40h_martes_tarde,resource_calendar_40h,Martes Tarde,1,afternoon,13,17
+calendar_attendance_40h_miercoles_maniana,resource_calendar_40h,Miércoles Mañana,2,morning,8,12
+calendar_attendance_40h_miercoles_tarde,resource_calendar_40h,Miércoles Tarde,2,afternoon,13,17
+calendar_attendance_40h_jueves_maniana,resource_calendar_40h,Jueves Mañana,3,morning,8,12
+calendar_attendance_40h_miercoles_tarde,resource_calendar_40h,Miércoles Tarde,3,afternoon,13,17
+calendar_attendance_40h_viernes_maniana,resource_calendar_40h,Viernes Mañana,4,morning,8,12
+calendar_attendance_40h_viernes_tarde,resource_calendar_40h,Viernes Tarde,4,afternoon,13,17

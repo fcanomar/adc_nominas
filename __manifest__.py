@@ -16,5 +16,7 @@
         'data/hr.salary.rule.csv',
         'data/hr.rule.input.csv',
         'data/hr.payroll.structure.csv',
+        'data/resource.calendar.csv',
+        'data/resource.calendar.attendance.csv',
     ],
 }
